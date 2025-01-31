@@ -12,7 +12,7 @@ int main() {
             printf("Consonant\n");
         }
     } 
-    else if (a>='0' && a<='9') {
+    else if (ch>='0' && ch<='9') {
         printf("Digit\n");
     }        
     else{
