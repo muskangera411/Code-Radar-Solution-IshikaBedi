@@ -4,6 +4,6 @@ int main() {
     scanf("%d",a);
     if(a>=60){
     printf("Eligible");}
-    else{printf("Not Eligible")}
+    else{printf("Not Eligible");}
     return 0;
 }
