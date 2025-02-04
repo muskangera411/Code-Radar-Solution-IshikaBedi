@@ -13,7 +13,7 @@ int main() {
         printf("Slow Down");
     }
     else{
-        print("Invalid input");
+        printf("Invalid input");
     }
     return 0;
 }
