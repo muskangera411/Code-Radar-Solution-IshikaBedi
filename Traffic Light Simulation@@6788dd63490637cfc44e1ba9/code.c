@@ -4,7 +4,7 @@ int main() {
     char a;
     scanf(" %c",&a);
     if(a=='R'){
-        print("Stop");
+        printf("Stop");
     }
     else if(a=='G'){
         printf("Go");
