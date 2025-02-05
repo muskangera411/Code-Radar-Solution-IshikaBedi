@@ -2,11 +2,11 @@
 
 int main() {
     int n;
-    int multiply=0;
+    int multiply=1;
     scanf("%d",&n);
     for(int i=1;i<=10;i++){
-        multiply*=i;
+        multiply=n*i;
     }
-    printf("%d*%d=%d",n,i,multiply);
+    printf("%d*%d=%d\n",n,i,multiply);
     return 0;
 }
