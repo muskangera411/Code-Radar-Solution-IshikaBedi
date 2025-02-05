@@ -5,8 +5,6 @@ int main() {
     int multiply=1;
     scanf("%d",&n);
     for(int i=1;i<=10;i++){
-        multiply=n*i;
-    }
-    printf("%d*%d=%d\n",n,i,multiply);
+    printf("%d*%d=%d\n",n,i,n*i);}
     return 0;
 }
