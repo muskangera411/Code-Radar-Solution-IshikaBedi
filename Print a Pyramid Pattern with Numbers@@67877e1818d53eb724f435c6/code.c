@@ -2,12 +2,16 @@
 
 void printNumberPyramid(int n) {
     for (int i = 1; i <= n; i++) {  // Loop for rows
-        for (int j = 1; j <= i; j++) {  // Loop for numbers in each row
-            if (j == i)
-                printf("%d", j);  // Print last number without space
-            else
-                printf("%d ", j); // Print number with space
+        // Print leading spaces
+        for (int space = 1; space <= n - i; space++) {
+            printf(" ");  // Print single space for alignment
         }
+        
+        // Print numbers in each row
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", j);
+        }
+
         printf("\n");  // Move to the next line after each row
     }
 }
