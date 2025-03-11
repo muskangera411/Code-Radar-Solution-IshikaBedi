@@ -6,7 +6,7 @@ void printNumberPyramid(int n) {
             if (j == i)
                 printf("%d", j);  // Print last number without space
             else
-                printf("%d ", j); // Print number with space
+                printf(" %d ", j); // Print number with space
         }
         printf("\n");  // Move to the next line after each row
     }
