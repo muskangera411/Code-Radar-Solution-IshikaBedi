@@ -11,7 +11,7 @@ void printNumberPyramid(int n) {
 
 int main() {
     int n;
-    printf("Enter a number: ");
+   
     scanf("%d", &n);
     printNumberPyramid(n);
     return 0;
