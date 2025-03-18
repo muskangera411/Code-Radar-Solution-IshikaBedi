@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void fibonacciSeries(int n);  // Function prototype
+void fibonacciSeries(int n);  // Function declaration
 
 int main() {
     int n;
     printf("Enter the number of terms: ");
     scanf("%d", &n);
-    
+
     fibonacciSeries(n);  // Function call
 
     return 0;
@@ -23,4 +23,3 @@ void fibonacciSeries(int n) {  // Function definition
         b = next;
     }
 }
-
