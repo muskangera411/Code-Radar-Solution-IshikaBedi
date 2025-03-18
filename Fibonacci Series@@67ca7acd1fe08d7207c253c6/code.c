@@ -1,25 +1,20 @@
 #include <stdio.h>
 
-void fibonacciSeries(int n);  // Function declaration
+int fibonacci(int n) {
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
 
 int main() {
     int n;
     printf("Enter the number of terms: ");
     scanf("%d", &n);
-
-    fibonacciSeries(n);  // Function call
-
-    return 0;
-}
-
-void fibonacciSeries(int n) {  // Function definition
-    int a = 0, b = 1, next;
-    printf("Fibonacci Series: %d %d ", a, b);
     
-    for (int i = 2; i < n; i++) {
-        next = a + b;
-        printf("%d ", next);
-        a = b;
-        b = next;
+    printf("Fibonacci Series: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", fibonacci(i));
     }
+    
+    return 0;
 }
